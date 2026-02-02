@@ -26,13 +26,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, loading }) => {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         placeholder="Buscar produtos..."
-                        className="w-full px-6 py-4 pr-32 text-lg border-2 border-gray-300 rounded-full focus:outline-none focus:border-blue-500 shadow-lg transition-all"
+                        className="w-full px-6 py-4 pr-32 text-lg border-2 border-gray-200 rounded-full focus:outline-none focus:border-red-500 shadow-lg transition-all"
                         disabled={loading}
                     />
                     <button
                         type="submit"
                         disabled={loading || !query.trim()}
-                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white px-8 py-2.5 rounded-full font-semibold transition-all flex items-center gap-2"
+                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-red-600 hover:bg-red-700 disabled:bg-gray-400 text-white px-8 py-2.5 rounded-full font-semibold transition-all flex items-center gap-2"
                     >
                         {loading ? (
                             <>
